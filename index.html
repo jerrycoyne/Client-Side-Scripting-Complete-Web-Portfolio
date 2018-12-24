@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Luigis</title>
+
+        <!-- Use this type of comment within HTML -->
+
+        <!-- If you want to use any Angular code (like the angular include, you 
+        must include a reference to the Angular JS library -->
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+        <!-- This is a reference to an external style sheet, many pages can point to one -->
+        <link href="style/myStyle.css" rel="stylesheet" type="text/css" />  
+    </head>
+    <body>
+
+        <div ng-app="">  <!-- inside this div you can use Angular directives -->     
+
+            <div ng-include src="'top.html'"> </div> <!-- will insert "top.html" code here -->  
+
+            
+                <div class="width66Pct">
+
+
+                    <div id="bio" class="width66Pct">
+                        <h2>Aye, It's Your Boy Luigi and Imma Here to Sell Auto Parts! This index page is
+                        to show the ADVANCED Angular.</h2>
+                        <p>Here at Luigi's we have the finest in European exotic auto parts.
+                            We specialize in supplying the highest quality parts at the best price
+                            South of Route 66! From spark plugs to whole transmissions we have it all.
+                            Were located in Radiator Springs, New Mexico right off Route 66.
+                            Don't hesitate, It'll be the greatest pit stop your car has ever been to!
+                            Click on the title or on the pictures to learn more about Luigi.
+                            <a href="https://cars.disney.com/luigi">Click Here to Learn More!</a></p>
+                            This index page is to show both Introduction Angular and Advanced Angular
+
+                    </div>
+
+                </div>
+                <div class="width33Pct" >
+
+                    <img src="pics/luigi.jpg">
+                    <img src="pics/Guido.jpg">
+                    <img id="radiator" src="pics/radiatorsprings.jpg">
+                    <br/>
+                </div> 
+
+                <!-- Must stop the floating so that elements below don't float up into here. -->
+                <div class="stopFloat"></div>
+           
+
+            <div ng-include src="'bottom.html'"> </div> <!-- will insert "top.html" code here -->  
+
+        </div> <!-- end of the ng-app div -->
+
+    </body>
+</html>
